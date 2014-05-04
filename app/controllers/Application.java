@@ -25,7 +25,10 @@ public class Application extends Controller {
     		String fileName = file.getFilename();
     		String contentType = file.getContentType();
     		File archivo = file.getFile();
-    		return ok(index.render("Archivo Subido!"));
+    		
+    		
+    		
+    		return ok(archivo);
     	}
     	
     	return internalServerError("Error en la subida de archivo");
